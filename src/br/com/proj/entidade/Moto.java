@@ -2,14 +2,21 @@ package br.com.proj.entidade;
 
 public class Moto {
 	
-	private int moto;
+	private int id;
 	private String descricao;
 	private int ano;
 	public int getMoto() {
-		return moto;
+		return id;
+
+	
+	
+
+}
+	public int getId() {
+		return id;
 	}
-	public void setMoto(int moto) {
-		this.moto = moto;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getDescricao() {
 		return descricao;
@@ -23,9 +30,4 @@ public class Moto {
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
-	
-	
-	
-	
-
 }
