@@ -1,5 +1,41 @@
 package br.com.proj.dados;
 
-public class MotoDB {
+import java.util.List;
+
+import br.com.proj.entidade.Moto;
+
+public class MotoDB implements IMotoDB{
+	
+	
+	public boolean insert (Moto moto){
+		
+		System.out.println("Id: " +moto.getId());
+		System.out.println(" Descrição: "+ moto.getDescricao());
+		System.out.println("Ano: "+moto.getAno());
+		
+		//IMPLEMENTAÇÃO DO INSERT NA BASE DE DADOS
+		
+		return true;
+	}
+
+	@Override
+	public boolean update(Moto moto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(Moto moto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Moto> select() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 
 }
